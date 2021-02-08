@@ -56,8 +56,20 @@ header{
   flex: 1;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   padding: 1%;
+}
+.hamburgerMenu{
+  flex: 1;
+  max-width: 4%;
+  align-self: center;
+}
+.navWrap{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 header .logo, header .navLinks{
   flex: 1;
@@ -67,9 +79,17 @@ header .navLinks{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 45%;
+  margin: 1.5% 0 0 0;
+}
+nav{
+  max-width: 85%;
+}
+nav .logo img{
+  width: 20%;
 }
 nav .navLinks{
-  padding: 4% 0;
+  padding: 1% 0;
 }
 .navLinks>a{
   flex: 1;
@@ -84,7 +104,7 @@ nav .navLinks{
 .intro{
   flex: 1;
   margin: 5% 3% 0 0;
-  padding: 0 1% 0 55%;
+  padding: 0 1% 0 60%;
 }
 section.cta{
   text-align: right;
@@ -103,12 +123,6 @@ section.cta{
 a{
   text-decoration: none;
 }
-nav{
-  max-width: 35%;
-}
-nav img{
-  width: 50%;
-}
 .navLinks>a{
   font-size: 1.2rem;
   font-weight: 700;
@@ -122,6 +136,9 @@ nav img{
   padding-bottom: 10px;
   border-bottom: 6px solid rgba(253, 209, 0, 1);
   transition: 0.3s ease 0s;
+}
+.hamburgerMenu{
+  cursor: pointer;
 }
 section.intro{
   text-align: right;
@@ -150,32 +167,76 @@ section.intro{
   /* border: 1px solid red !important; */
 }
 @media screen and (max-width: 1370px) {
-  nav{
-    max-width: 52%;
+  header .navLinks{
+    width: 70%;
+    margin: 0;
   }
-  nav img{
-    width: 40%;
+  nav .logo img{
+    width: 25%;
   }
   nav .navLinks{
     padding: 3% 12%;
   }
+  .intro{
+    padding: 0 1% 0 56%;
+  }
 }
 @media screen and (max-width: 1050px) {
-  nav{
-    max-width: 67%;
+  header .navLinks{
+    width: 80%;
   }
-  nav img{
-    width: 40%;
+  nav .logo img{
+    width: 30%;
+  }
+  .intro{
+    padding: 0 1% 0 45%;
   }
 }
 @media screen and (max-width: 900px) {
-  nav{
-    max-width: 67%;
+  header{
+    background-size: contain;
+    background-position: top;
   }
-  nav img{
-    width: 40%;
+  header .navLinks{
+    width: 85%;
+  }
+  nav .logo img{
+    width: 30%;
   }
   nav .navLinks{
-    padding: 3% 3%;
+    padding: 3% 2%;
+  }
+  .hamburgerMenu{
+    max-width: 5%;
+  }
+  .lowerHeader{
+    justify-content: center;
+  }
+  section.intro{
+    border: none;
+    margin: 5% 0 0 0;
+    padding: 0 15%;
+  }
+  .intro h1{
+    text-align: center;
+  }
+  section.cta{
+    margin: 3% 0 0 0;
+    text-align: center;
+  }
+  .ctaBtn{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  header{
+    background-size: cover;
+    background-position: top;
+  }
+  .hamburgerMenu{
+    max-width: 7%;
+  }
+  .resHid{
+    display: none;
   }
 }
