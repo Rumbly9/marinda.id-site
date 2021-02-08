@@ -1,0 +1,89 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/*LAYOUT
+/*******************************************/
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 812px;
+}
+header{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  /* background: url("../assets/intro-img.jpg"); */
+  /* background-blend-mode: overlay; */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.0)),
+  url('../assets/intro-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 812px;
+}
+header nav{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+header .logo, header .navLinks{
+  flex: 1;
+  padding: 1%;
+}
+header .navLinks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navLinks>a{
+  flex: 1;
+  padding: 1%;
+}
+section{
+  /* flex: 1; */
+}
+/******************************************
+/*STYLE
+/*******************************************/
+
+nav{
+  max-width: 35%;
+}
+nav img{
+  width: 50%;
+}
+.navLinks>a{
+  font-size: 1.5rem;
+}
+
+section{
+  /* background: url("../assets/intro-img.jpg") */
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+*{
+  /* border: 1px solid red !important; */
+}
