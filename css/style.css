@@ -24,7 +24,8 @@
 body{
   display: flex;
   flex-direction: column;
-  height: 812px;
+  /* height: 812px; */
+  height: 100vh;
 }
 header{
   flex: 1;
@@ -38,7 +39,13 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 812px;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
 }
 .contentWrapper{
   display: flex;
@@ -197,27 +204,31 @@ section.intro{
 }
 @media screen and (max-width: 900px) {
   header{
-    background-size: contain;
+    background-size: cover;
     background-position: top;
   }
   header .navLinks{
-    width: 85%;
+    width: 87%;
   }
   nav .logo img{
-    width: 30%;
+    width: 45%;
   }
   nav .navLinks{
     padding: 3% 2%;
   }
   .hamburgerMenu{
-    max-width: 5%;
+    max-width: 8%;
+  }
+  .upperHeader{
+    max-height: 21%;
   }
   .lowerHeader{
     justify-content: center;
   }
   section.intro{
+    flex: 2;
     border: none;
-    margin: 5% 0 0 0;
+    margin: 0;
     padding: 0 15%;
   }
   .intro h1{
@@ -235,6 +246,9 @@ section.intro{
   header{
     background-size: cover;
     background-position: top;
+  }
+  .upperHeader{
+    max-height: 15%;
   }
   .hamburgerMenu{
     max-width: 7%;
