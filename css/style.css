@@ -95,3 +95,11 @@ section{
     width: 40%;
   }
 }
+@media screen and (max-width: 1050px) {
+  nav{
+    max-width: 67%;
+  }
+  nav img{
+    width: 40%;
+  }
+}
