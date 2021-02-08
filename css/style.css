@@ -57,6 +57,9 @@ header .navLinks{
   justify-content: center;
   align-items: center;
 }
+nav .navLinks{
+  padding: 4% 0;
+}
 .navLinks>a{
   flex: 1;
   padding: 1%;
@@ -94,6 +97,9 @@ section{
   nav img{
     width: 40%;
   }
+  nav .navLinks{
+    padding: 3% 12%;
+  }
 }
 @media screen and (max-width: 1050px) {
   nav{
@@ -101,5 +107,16 @@ section{
   }
   nav img{
     width: 40%;
+  }
+}
+@media screen and (max-width: 800px) {
+  nav{
+    max-width: 67%;
+  }
+  nav img{
+    width: 40%;
+  }
+  nav .navLinks{
+    padding: 3% 3%;
   }
 }
