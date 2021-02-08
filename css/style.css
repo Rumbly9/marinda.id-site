@@ -87,3 +87,11 @@ section{
 *{
   /* border: 1px solid red !important; */
 }
+@media screen and (max-width: 1370px) {
+  nav{
+    max-width: 52%;
+  }
+  nav img{
+    width: 40%;
+  }
+}
