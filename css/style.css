@@ -245,7 +245,9 @@ section.intro{
 @media screen and (max-width: 500px) {
   header{
     background-size: cover;
-    background-position: top;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   .upperHeader{
     max-height: 15%;
